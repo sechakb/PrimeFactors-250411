@@ -3,9 +3,11 @@
 
 using namespace std;
 
-TEST(PrimeFactors, PrimeTest)
+TEST(PrimeFactors, Of1)
 {
-    EXPECT_EQ(1, 1);
+    PrimeFactor prime_factor;
+    vector<int> expected = {};
+    EXPECT_EQ(expected, prime_factor.of(1));
 }
 
 int main()
